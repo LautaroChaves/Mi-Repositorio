@@ -18,7 +18,7 @@
 }
 
                 /* BARRA DE NAVEGACION */
-                /* PAGUINA PRINCICPAL */
+
 
 body{
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -139,7 +139,7 @@ body{
 }
 
             /* CONTENIDO DE LA PAGUINA */
-
+                /* PAGUINA PRINCICPAL */
 .hero-box {
     margin-bottom: 50px;
 }
@@ -155,7 +155,6 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-
 .hero-box h1, p{
     text-align: center;
     background-color: rgb(255, 255, 255, 0.3);
@@ -169,7 +168,6 @@ body{
 .hero-box p {
     font-size: 25px;
 }
-
             /* PAGUINA PRINCIAL SECCION 2 */
 section {
     margin-bottom: 48px;
@@ -416,14 +414,11 @@ div {
     align-items: center;
     justify-content: center;
 }
-
                     /* FOOTER */
-
 footer {
     background-color: #5d796c;
     height: 100%;
 }
-
 .content-footer {
     display: flex;
     justify-content: space-evenly;
@@ -458,15 +453,12 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .social-text h4 {
     margin: 0 0 16px;
 }
-
 .social-text p a {
     color: #fff;
 }
-
 .copy {
     margin-bottom: 0;
 }
