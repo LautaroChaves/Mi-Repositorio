@@ -485,13 +485,6 @@ footer {
 .card-text {
     padding: 20px;
 }
-@media (max-width: 575px) {
-    .col {
-        margin: 0;
-        padding: 0;
-    }
-    
-}
 /* SECCION DE BLOG */
 .carousel-item {
     height: 80vh;
@@ -502,7 +495,6 @@ footer {
         height: 100%;
         width: auto;
     }
-    
 }
 .carousel-caption {
     bottom: 200px;
@@ -558,10 +550,6 @@ footer {
         padding: 0;
         margin: 0;
     }
-}
-@media (min-width: 580px) {
-
-    
 }
 
 /* GALERIA */
