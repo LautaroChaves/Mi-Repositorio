@@ -146,6 +146,7 @@ body{
 
 .hero-box {
     background-image: url(../imagen/paguina-principal/foto-principal.jpg);
+    object-fit: cover;
     height: 850px;
     width: 100%;
     background-position: center;
@@ -468,19 +469,11 @@ footer {
 .container {
     padding: 30px 0;
 }
-
-.service-img {
-    width: 1300px;
-    margin: 0 auto;
-}
-
 .img-container {
     width: 300px;
     background-color: #779d23;
     display: inline-block;
     margin: 0 10px;
-    background-size: cover;
-    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -491,12 +484,24 @@ footer {
 .card-text {
     padding: 20px;
 }
-
+@media (max-width: 575px) {
+    .col {
+        margin: 0;
+        padding: 0;
+    }
+    
+}
 /* SECCION DE BLOG */
-
 .carousel-item {
     height: 80vh;
     min-height: 300px;
+}
+@media (max-width: 721px) {
+    .carousel-item {
+        height: 100%;
+        width: auto;
+    }
+    
 }
 .carousel-caption {
     bottom: 200px;
@@ -531,7 +536,7 @@ footer {
 }
 @media (max-width: 580px) {
     .img-tamaño {
-        width: 300px;
+        width: 100%;
         height: 300px;
     }
     
@@ -542,16 +547,23 @@ footer {
     align-items: center;
     align-content: center;
     margin: 0;
+    text-align: center;
     
 }
 @media (max-width: 580px) {
     .tamaño__text{
-        text-align: left;
-        width: 300px;
+        text-align: center;
+        width: 100%;
         padding: 0;
         margin: 0;
     }
 }
+@media (min-width: 580px) {
+
+    
+}
+
+
 
                     /* CONTACTO */
 .contact {
