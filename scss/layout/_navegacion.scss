@@ -1,0 +1,113 @@
+.cabecera {
+    background-color: $pr-color;
+    box-shadow: 5px 0 10px $bk-color;
+
+    .navbar {
+        width: 100%;
+        height: 80px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            height: 50px;
+            border-radius: 50%;
+            margin: 0px 80px;
+            box-shadow: 5px 0 10px $bk-color;
+
+            @media (min-width: 360px) {
+                margin: 10px 40px 20px;
+            }
+        }
+
+        .menu {
+            display: flex;
+            gap: 2rem;
+
+            @media (max-width: 1020px) {
+                display: none;
+            }
+
+            li {
+                border-radius: 3px;
+                margin: 0 15px;
+
+                &:hover,
+                li.show {
+                    background-color: $hv-bk-color;
+                    transition: .4s;
+                }
+
+                a {
+                    padding: 7px 13px;
+                    font-size: 16px;
+                    display: block;
+                    font-weight: 500px;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $sc-color;
+                }
+            }
+        }
+
+        .toggle_btn {
+            color: $sc-color;
+            font-size: 2rem;
+            cursor: pointer;
+            display: none;
+
+            @media (max-width: 1020px) {
+                display: block;
+                padding: 15px;
+            }
+        }
+
+        .dropdown_menu.open {
+            height: 250px;
+        }
+
+        .dropdown_menu {
+            display: none;
+            position: absolute;
+            top: 80px;
+            height: 0;
+            width: 100%;
+            background-color: $pr-color;
+            backdrop-filter: blur(15px);
+            overflow: hidden;
+            transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            @media (max-width: 1020px) {
+                display: block;
+                z-index: 2;
+            }
+
+            li {
+                padding: 0.7rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover,
+                li:active {
+                    background-color: $hv-bk-color;
+                    transition: .4s;
+                }
+
+                a {
+                    font-size: 16px;
+                    display: block;
+                    justify-content: space-between;
+                    font-weight: 500px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+                    color: $sc-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
