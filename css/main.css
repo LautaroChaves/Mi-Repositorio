@@ -552,7 +552,7 @@ body {
 }
 
 .contact {
-  background-image: url(../imagen/paguina-principal/imaguen-del-form.jpg);
+  background-image: url(../../imagen/foto-de-contacto/fondo-contacto.jpg);
   min-height: 100vh;
   display: flex;
   align-items: center;
