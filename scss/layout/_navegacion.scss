@@ -16,10 +16,6 @@
             border-radius: 50%;
             margin: 0px 80px;
             box-shadow: 5px 0 10px $bk-color;
-
-            @media (min-width: 360px) {
-                margin: 10px 40px 20px;
-            }
         }
 
         .menu {
